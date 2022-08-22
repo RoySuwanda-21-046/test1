@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE> contoh objek check Box </TITLE>
+<HEAD>
+<BODY>
+Pilihlah maksimal 15 sks <br>
+<form name="formTes" action="testform.htm" method="post">
+<script Language = "JavaScript">
+    //Kode - Kode Scrip
+    function cekKRS () {
+        var jum_sks = 0;
+        for (var i=0; i < 6; 1++) {
+            if(document.formTes.elements [1].checked) 
+                Jum_sks +=matakuliah [1] [2];
+        }
+        document.formTes. fieldJumlah.value = Jum_sks; 
+        if(Jum_ska > 15) 
+            alert ("Anda harus mengurangi Ske\n"+ 
+                    "karena melebihi 15 SKS");
+    }
+    function cekKirim () {
+        if(document.formTes.fieldJumlah.value >15)
+            alert ("Anda harus mengurangi SKSyn"+
+                    "karena melebihi 15 SKS");
+        else
+            window.location.href="testform.htm";
+    }
+    var matakuliah = [["TKD164","Pemrograman Web", 3]],
+                    ["TKD163","Sistem Informasi", 3],
+                    ["TKD162", "Basis Data", 3],
+            ["TKD161", "Matematika", 3],
+            ["TKD160", "Analisa Desain S1", 3],
+            ["TKD159", "PBO", 3];

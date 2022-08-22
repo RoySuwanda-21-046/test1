@@ -1,0 +1,16 @@
+<Script Language ="JavaScript">
+    //Kode Kode Script
+    function tampilElemenArray () {
+        for (var i=0; i< this.length; i++){ 
+            document.write(""+i+"] = " +this[i]+"<BR>") ;
+        }
+    
+    }
+    Array.prototype.cetak = tampilElemenArray;
+    var kota = new Array("medan", "jakarta");
+    var tanaman = new Array ("Mawar", "Melati");
+    document.write("Kota-Kota: <BR>");
+    kota.cetak();
+    document.write("Tanaman: <BR>");
+    tanaman.cetak();
+</script>

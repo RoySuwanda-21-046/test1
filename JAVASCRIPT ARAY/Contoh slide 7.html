@@ -1,0 +1,11 @@
+<Script Language="JavaScript">
+    //Kode - Kode Script
+    var kalimat = "Ku mau makan bakso";
+    var dicari = /mau/;
+    var cocok = dicari.exec(kalimat);
+    document.write("kalimat: "+kalimat+"<BR>");
+    document.write("kata yang dicocokkan: "+cocok+"<BR>");
+    if (cocok !=null) {
+        document.write("index ke-"+cocok.index);
+    }
+</Script>
